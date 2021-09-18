@@ -10,34 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_72190345" >
         <activity
-            android:name=".DutaTani"
-            android:exported="true"
-            android:label="@string/title_activity_duta_tani" />
+            android:name=".CustomListView"
+            android:exported="true" />
         <activity
-            android:name=".ProteinTrackerActivity"
+            android:name=".DaftarLahanPetaniListView"
+            android:exported="true"
+            android:label="Daftar Lahan Petani"/>
+        <activity
+            android:name=".SampleListView"
             android:exported="true"
             android:theme="@style/BlueBlood"/>
         <activity
-            android:name=".TableActivity"
+            android:name=".SampleList"
             android:exported="true"
-            android:theme="@style/BlueBlood"/>
-        <activity
-            android:name=".ConstraintActivity"
-            android:exported="true"
-            android:theme="@style/BlueBlood"/>
-        <activity
-            android:name=".LinearActivity"
-            android:exported="true"
-            android:theme="@style/BlueBlood"/>
-        <activity
-            android:name=".HelpActivity"
-            android:exported="true"
-            android:label="Help Activity"
-            android:theme="@style/BlueBlood"/>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="Main Activity"
             android:theme="@style/BlueBlood">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,6 +30,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DutaTani"
+            android:exported="true"
+            android:label="@string/title_activity_duta_tani" />
+        <activity
+            android:name=".ProteinTrackerActivity"
+            android:exported="true"
+            android:theme="@style/BlueBlood" />
+        <activity
+            android:name=".TableActivity"
+            android:exported="true"
+            android:theme="@style/BlueBlood" />
+        <activity
+            android:name=".ConstraintActivity"
+            android:exported="true"
+            android:theme="@style/BlueBlood" />
+        <activity
+            android:name=".LinearActivity"
+            android:exported="true"
+            android:theme="@style/BlueBlood" />
+        <activity
+            android:name=".HelpActivity"
+            android:exported="true"
+            android:label="Help Activity"
+            android:theme="@style/BlueBlood" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Main Activity"
+            android:theme="@style/BlueBlood" />
     </application>
 
 </manifest>
