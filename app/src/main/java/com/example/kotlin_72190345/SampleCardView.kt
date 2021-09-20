@@ -1,42 +1,37 @@
 package com.example.kotlin_72190345
 
-import adapter.PetaniAdapter
+import adapter.PetaniCVAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import model.Petani
 
-class SampleRecyclerView : AppCompatActivity() {
-
-
-
-    lateinit var rvLatihan : RecyclerView
+class SampleCardView : AppCompatActivity() {
+    lateinit var rvLatihanCard : RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sample_recycler_view)
+        setContentView(R.layout.activity_sample_card_view)
 
-        rvLatihan = findViewById(R.id.rvLatihan)
-        rvLatihan.adapter = PetaniAdapter(generateDummyList(6))
-        rvLatihan.setHasFixedSize(true)
-        rvLatihan.layoutManager = LinearLayoutManager(this)
-
+        rvLatihanCard = findViewById(R.id.rvCardView)
+        rvLatihanCard.setHasFixedSize(true)
+        rvLatihanCard.layoutManager = LinearLayoutManager(this)
+        rvLatihanCard.adapter = PetaniCVAdapter(dataDummy(6))
     }
 
-    private fun generateDummyList(size : Int) : List<Petani> {
+    private fun dataDummy(size : Int) : List<Petani> {
         var list = ArrayList<Petani>()
         var user : String
 
-        for (i in 1 until size){
+        for(i in 1 until size){
             if(i===1){
-                 user = "DAS"
+                user = "DAS"
             }else{
                 user = "DAS${i}"
             }
             var item = Petani(user,"Dimas Aji Setiawan","100","50","50")
-            list +=item
+            list += item
         }
         return list
     }

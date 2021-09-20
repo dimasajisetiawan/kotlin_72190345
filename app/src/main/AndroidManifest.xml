@@ -10,8 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_72190345">
         <activity
+            android:name=".SampleCardView"
+            android:exported="true"
+            android:theme="@style/BlueBlood"/>
+        <activity
             android:name=".SampleRecyclerView"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/BlueBlood"/>
         <activity
             android:name=".CustomListView"
             android:exported="true" />
