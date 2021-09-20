@@ -10,6 +10,7 @@ import java.util.*
 class SampleList : AppCompatActivity() {
     lateinit var btnShowList : Button
     lateinit var btnCustomList : Button
+    lateinit var btnSampleRV : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +18,7 @@ class SampleList : AppCompatActivity() {
 
         btnShowList = findViewById(R.id.btnShowList)
         btnCustomList = findViewById(R.id.btnCustomList)
+        btnSampleRV = findViewById(R.id.btnSampleRV)
 
         btnShowList.setOnClickListener(View.OnClickListener { view ->
             var intent = Intent(this@SampleList, SampleListView::class.java )
@@ -25,6 +27,11 @@ class SampleList : AppCompatActivity() {
 
         btnCustomList.setOnClickListener(View.OnClickListener { view ->
             var intent = Intent(this@SampleList, DaftarLahanPetaniListView::class.java )
+            startActivity(intent)
+        })
+
+        btnSampleRV.setOnClickListener(View.OnClickListener { view ->
+            var intent = Intent(this@SampleList, SampleRecyclerView::class.java )
             startActivity(intent)
         })
     }
