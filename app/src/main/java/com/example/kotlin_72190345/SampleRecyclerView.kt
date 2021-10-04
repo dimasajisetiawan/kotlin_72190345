@@ -1,12 +1,12 @@
 package com.example.kotlin_72190345
 
-import adapter.PetaniAdapter
+import com.example.kotlin_72190345.adapter.PetaniAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import model.Petani
+import com.example.kotlin_72190345.model.Petani
 
 class SampleRecyclerView : AppCompatActivity() {
 

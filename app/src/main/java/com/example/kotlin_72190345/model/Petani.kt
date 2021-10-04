@@ -1,4 +1,4 @@
-package model
+package com.example.kotlin_72190345.model
 
 data class Petani(
     val user: String,

@@ -1,11 +1,11 @@
 package com.example.kotlin_72190345
 
-import adapter.PetaniCVAdapter
+import com.example.kotlin_72190345.adapter.PetaniCVAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import model.Petani
+import com.example.kotlin_72190345.model.Petani
 
 class SampleCardView : AppCompatActivity() {
     lateinit var rvLatihanCard : RecyclerView

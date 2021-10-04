@@ -1,4 +1,4 @@
-package adapter
+package com.example.kotlin_72190345.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,17 +6,17 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlin_72190345.R
-import model.Petani
+import com.example.kotlin_72190345.model.Petani
 
 class PetaniCVAdapter (val petani: List<Petani>) : RecyclerView.Adapter<PetaniCVAdapter.PetaniHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PetaniCVAdapter.PetaniHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PetaniHolder {
         return PetaniHolder(
             LayoutInflater.from(parent.context).inflate(
                 R.layout.cv_item_petani, parent, false))
 
     }
 
-    override fun onBindViewHolder(holder: PetaniCVAdapter.PetaniHolder, position: Int) {
+    override fun onBindViewHolder(holder: PetaniHolder, position: Int) {
         holder.bindPetani(petani[position])
     }
 
