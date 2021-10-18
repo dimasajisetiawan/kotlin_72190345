@@ -12,14 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_72190345">
         <activity
-            android:name=".GetPetaniActivity"
+            android:name=".crud.AddPetaniActivity"
+            android:exported="true" />
+        <activity
+            android:name=".crud.UpdatePetaniActivity"
+            android:exported="true" />
+        <activity
+            android:name=".crud.GetPetaniActivity"
             android:exported="true"
             android:theme="@style/BlueBlood">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".GetAPIActivity"
@@ -27,7 +33,7 @@
         <activity
             android:name=".ServiceActivity"
             android:exported="true"
-            android:theme="@style/BlueBlood"/>
+            android:theme="@style/BlueBlood" />
         <activity
             android:name=".SampleCardView"
             android:exported="true"
