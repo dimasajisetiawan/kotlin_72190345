@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_72190345">
         <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/BlueBlood">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
             android:name=".crud.AddPetaniActivity"
             android:exported="true" />
         <activity
@@ -20,13 +30,7 @@
         <activity
             android:name=".crud.GetPetaniActivity"
             android:exported="true"
-            android:theme="@style/BlueBlood">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/BlueBlood"/>
         <activity
             android:name=".GetAPIActivity"
             android:exported="true" />
